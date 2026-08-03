@@ -29,3 +29,16 @@ This project demonstrates an end-to-end cloud infrastructure and DevOps workflow
         │
         ▼  (NodePort Service Target Port 80)
 [ Pod: netflix-deployment (NGINX:Alpine v4) ]
+eval $(minikube docker-env)
+docker build -t netflix-clone:v4 .
+# Create or update deployment image
+kubectl set image deployment/netflix-deployment netflix-clone=netflix-clone:v4
+
+# Verify deployment status
+kubectl rollout status deployment/netflix-deployment
+kubectl port-forward --address 0.0.0.0 service/netflix-service 30657:80 > /dev/null 2>&1 &
+netflix-clone-k8s/
+├── index.html        # Responsive frontend markup
+├── style.css         # Styling, overlays, and responsive breakpoints
+├── Dockerfile        # Production multi-stage NGINX image build file
+└── README.md         # Complete technical documentation
