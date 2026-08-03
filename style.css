@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 7px 17px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background-color: #f40612;
+}
+
+/* Main Hero Content */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* Email Input Form */
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 18px 15px;
+  font-size: 16px;
+  border: 1px solid #555;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.email-form input::placeholder {
+  color: #8c8c8c;
+}
+
+.email-form button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 18px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.email-form button:hover {
+  background-color: #f40612;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Background with dark overlay -->
+  <div class="background-container">
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">NETFLIX</div>
+    <div class="nav-actions">
+      <div class="lang-select">
+        <i class="fa-solid fa-language"></i>
+        <select>
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+        </select>
+        <i class="fa-solid fa-caret-down dropdown-arrow"></i>
+      </div>
+      <button class="signin-btn">Sign In</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, shows, and more</h1>
+      <p class="subtitle">Starts at ₹149. Cancel at any time.</p>
+      <p class="cta-text">Ready to watch? Enter your email to create or restart your membership.</p>
+      
+      <form class="email-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started <i class="fa-solid fa-chevron-right"></i></button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Curved Bottom Border Accent -->
+  <div class="curved-border-container">
+    <div class="curved-border"></div>
+  </div>
+</body>
+</html>
